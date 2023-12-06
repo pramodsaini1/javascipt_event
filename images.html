@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOOp</title>
+    </head>
+    <body>
+        <table width="100%" heigth="400px">
+            <tr>
+                <td align=center colspan="4" img src="1.jpg" id="img" ></td>
+            </tr>
+        </table>
+        <marquee onmouseover="stop()" onmouseout="start()">
+        <table border="1" width="100%">
+            <tr> 
+            <script>
+                for(i=1;i<=4;i++){
+                    document.write("<td><img src='"+i+".jpg' id='"+i+"' onclick='change(v)'></td>");
+                }
+            </script>
+            </tr>
+        </table>
+        </marquee>
+        </script>
+    </body>
+</html>
